@@ -3,11 +3,11 @@ package com.example.sdk.okhttp.response;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.youdu.adutil.ResponseEntityToModule;
-import com.youdu.okhttp.exception.OkHttpException;
-import com.youdu.okhttp.listener.DisposeDataHandle;
-import com.youdu.okhttp.listener.DisposeDataListener;
-import com.youdu.okhttp.listener.DisposeHandleCookieListener;
+import com.example.sdk.okhttp.exception.OkHttpException;
+import com.example.sdk.okhttp.listener.DisposeDataHandle;
+import com.example.sdk.okhttp.listener.DisposeDataListener;
+import com.example.sdk.okhttp.listener.DisposeHandleCookieListener;
+import com.google.gson.Gson;
 
 import org.json.JSONObject;
 
@@ -111,7 +111,8 @@ public class CommonJsonCallback implements Callback {
             if (mClass == null) {
                 mListener.onSuccess(result);
             } else {
-                Object obj = ResponseEntityToModule.parseJsonObjectToModule(result, mClass);
+                Object obj=new Gson().fromJson(responseObj.toString(),mClass);
+//                Object obj = ResponseEntityToModule.parseJsonObjectToModule(result, mClass);
                 if (obj != null) {
                     mListener.onSuccess(obj);
                 } else {

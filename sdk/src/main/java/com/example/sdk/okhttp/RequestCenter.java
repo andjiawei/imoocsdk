@@ -1,9 +1,7 @@
 package com.example.sdk.okhttp;
 
-import com.youdu.module.AdInstance;
-import com.youdu.okhttp.listener.DisposeDataHandle;
-import com.youdu.okhttp.listener.DisposeDataListener;
-import com.youdu.okhttp.request.CommonRequest;
+
+import com.example.sdk.okhttp.listener.DisposeDataListener;
 
 /**
  * Created by renzhiqiang on 16/10/27.
@@ -17,7 +15,7 @@ public class RequestCenter {
      */
     public static void sendImageAdRequest(String url, DisposeDataListener listener) {
 
-        CommonOkHttpClient.post(CommonRequest.createPostRequest(url, null),
-                new DisposeDataHandle(listener, AdInstance.class));
+//        CommonOkHttpClient.post(CommonRequest.createPostRequest(url, null),
+//                new DisposeDataHandle(listener, AdInstance.class));
     }
 }

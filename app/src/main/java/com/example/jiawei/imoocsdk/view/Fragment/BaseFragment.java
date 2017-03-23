@@ -14,6 +14,7 @@ import com.example.jiawei.imoocsdk.constant.Constant;
  */
 public class BaseFragment extends Fragment {
 
+    public final String TAG=getClass().getSimpleName();
     protected Activity mContext;
 
     /**

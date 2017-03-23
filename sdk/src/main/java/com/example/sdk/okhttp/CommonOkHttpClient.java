@@ -1,10 +1,11 @@
 package com.example.sdk.okhttp;
 
-import com.youdu.okhttp.cookie.SimpleCookieJar;
-import com.youdu.okhttp.https.HttpsUtils;
-import com.youdu.okhttp.listener.DisposeDataHandle;
-import com.youdu.okhttp.response.CommonFileCallback;
-import com.youdu.okhttp.response.CommonJsonCallback;
+
+import com.example.sdk.okhttp.cookie.SimpleCookieJar;
+import com.example.sdk.okhttp.https.HttpsUtils;
+import com.example.sdk.okhttp.listener.DisposeDataHandle;
+import com.example.sdk.okhttp.response.CommonFileCallback;
+import com.example.sdk.okhttp.response.CommonJsonCallback;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;

@@ -4,9 +4,9 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 
-import com.youdu.okhttp.exception.OkHttpException;
-import com.youdu.okhttp.listener.DisposeDataHandle;
-import com.youdu.okhttp.listener.DisposeDownloadListener;
+import com.example.sdk.okhttp.exception.OkHttpException;
+import com.example.sdk.okhttp.listener.DisposeDataHandle;
+import com.example.sdk.okhttp.listener.DisposeDownloadListener;
 
 import java.io.File;
 import java.io.FileOutputStream;
